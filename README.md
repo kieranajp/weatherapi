@@ -1,5 +1,7 @@
 # Weather API Documentation
 
+[![Build Status](https://travis-ci.org/kieranajp/weatherapi.png)](https://travis-ci.org/kieranajp/weatherapi)
+
 ## Location functions
 
 ### `GET /location/:search/`
