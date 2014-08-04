@@ -2,6 +2,8 @@
 
 require '../vendor/autoload.php';
 
+Dotenv::load(__DIR__ . '/..');
+
 $app = New \SlimController\Slim([
     'templates.path'             => 'templates',
     'controller.class_prefix'    => '\\Kieranajp\\Weather\\Controller',

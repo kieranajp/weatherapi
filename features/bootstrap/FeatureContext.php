@@ -13,7 +13,7 @@ class FeatureContext implements SnippetAcceptingContext
     public $client;
     public $res;
     public $data;
-    public $baseUrl = "http://psr.dev";
+    public $baseUrl;
 
     /**
      * Initializes context.
@@ -23,6 +23,7 @@ class FeatureContext implements SnippetAcceptingContext
      */
     public function __construct()
     {
+        $this->baseUrl = $_ENV["BASE_URL"];
         $this->client = new GuzzleHttp\Client();
     }
 
