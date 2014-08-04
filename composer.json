@@ -1,0 +1,20 @@
+{
+    "require": {
+        "slimcontroller/slimcontroller": "0.*",
+        "guzzlehttp/guzzle": "4.*",
+        "vlucas/phpdotenv": "1.*"
+    },
+    "require-dev": {
+	  	"behat/behat": "3.*"
+	},
+	"minimum-stability": "dev",
+	"config": {
+		"bin-dir": "bin/"
+	},
+    "autoload": {
+        "psr-4": {
+            "Kieranajp\\Weather\\Controller\\": "controllers/",
+            "Kieranajp\\Weather\\Struct\\": "lib/"
+        }
+    }
+}
