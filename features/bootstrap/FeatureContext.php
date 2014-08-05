@@ -23,6 +23,7 @@ class FeatureContext implements SnippetAcceptingContext
      */
     public function __construct()
     {
+        Dotenv::load(__DIR__ . "/../..");
         $this->baseUrl = $_ENV["BASE_URL"];
         $this->client = new GuzzleHttp\Client();
     }
